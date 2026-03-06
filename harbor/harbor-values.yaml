@@ -10,17 +10,17 @@ harborAdminPassword: Harbor12345
 persistence:
   persistentVolumeClaim:
     registry:
-      storageClass: local-storage
+      storageClass: local-path
       size: 50Gi
     database:
-      storageClass: local-storage
+      storageClass: local-path
       size: 10Gi
     redis:
-      storageClass: local-storage
+      storageClass: local-path
       size: 5Gi
     jobservice:
-      storageClass: local-storage
+      storageClass: local-path
       size: 5Gi
     trivy:
-      storageClass: local-storage
+      storageClass: local-path
       size: 5Gi

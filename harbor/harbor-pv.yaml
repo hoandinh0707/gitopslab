@@ -7,7 +7,7 @@ spec:
     storage: 50Gi
   accessModes:
     - ReadWriteOnce
-  storageClassName: local-storage
+  storageClassName: local-path
   persistentVolumeReclaimPolicy: Retain
   local:
     path: /data/harbor/registry
@@ -29,7 +29,7 @@ spec:
     storage: 10Gi
   accessModes:
     - ReadWriteOnce
-  storageClassName: local-storage
+  storageClassName: local-path
   persistentVolumeReclaimPolicy: Retain
   local:
     path: /data/harbor/database
@@ -51,7 +51,7 @@ spec:
     storage: 5Gi
   accessModes:
     - ReadWriteOnce
-  storageClassName: local-storage
+  storageClassName: local-path
   persistentVolumeReclaimPolicy: Retain
   local:
     path: /data/harbor/redis
@@ -73,7 +73,7 @@ spec:
     storage: 5Gi
   accessModes:
     - ReadWriteOnce
-  storageClassName: local-storage
+  storageClassName: local-path
   persistentVolumeReclaimPolicy: Retain
   local:
     path: /data/harbor/jobservice
