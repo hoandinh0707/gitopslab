@@ -8,12 +8,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://charts.jenkins.io
-    chart: jenkins
-    targetRevision: 5.0.0
-    helm:
-      valueFiles:
-      - values.yaml
+    repoURL: https://github.com/hoandinh0707/gitopslab.git
+    targetRevision: main
+    path: jenkins
 
   destination:
     server: https://kubernetes.default.svc
