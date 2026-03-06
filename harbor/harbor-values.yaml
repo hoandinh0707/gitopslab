@@ -1,0 +1,26 @@
+expose:
+  type: nodePort
+  tls:
+    enabled: false
+
+externalURL: http://harbor.local
+
+harborAdminPassword: Harbor12345
+
+persistence:
+  persistentVolumeClaim:
+    registry:
+      storageClass: local-storage
+      size: 50Gi
+    database:
+      storageClass: local-storage
+      size: 10Gi
+    redis:
+      storageClass: local-storage
+      size: 5Gi
+    jobservice:
+      storageClass: local-storage
+      size: 5Gi
+    trivy:
+      storageClass: local-storage
+      size: 5Gi
